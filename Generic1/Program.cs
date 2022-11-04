@@ -5,16 +5,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Enter First Value");
-            string firstValue = Console.ReadLine();
+           
+            MaximumNumber<int>.MaximumstringegerNumber(10,20,30);
+            MaximumNumber<float>.MaximumstringegerNumber(11.0f,12.5f,13.5f);
+            MaximumNumber<string>.MaximumstringegerNumber("Ramchandra","Hari","Chanfra");
 
-            Console.WriteLine("Please Enter Second Value");
-            string secondValue = Console.ReadLine();
-
-            Console.WriteLine("Please Enter Third Value");
-            string thirdValue = Console.ReadLine();
-
-            MaximumNumber.MaximumstringegerNumber(firstValue, secondValue, thirdValue);
         }
     }
 }
