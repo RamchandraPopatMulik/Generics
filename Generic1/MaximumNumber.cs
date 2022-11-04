@@ -8,39 +8,31 @@ namespace Generic1
 {
     public class MaximumNumber<T> where T : IComparable
     {
-        public T firstValue;
-        public T secondValue;
-        public T thirdValue;
-      
-        public MaximumNumber(T firstValue, T secondValue, T thirdValue)
+        public T[] Values;
+
+        public MaximumNumber(T[] Values)
         {
-            this.firstValue = firstValue;
-            this.secondValue = secondValue;
-            this.thirdValue = thirdValue;
+            this.Values = Values;
         }
-
-        public static T MaximumstringegerNumber(T firstValue, T secondValue, T thirdValue)
+        public T[] Sort(T[] Values)
         {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
-               firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
-               firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
-            {
-                Console.WriteLine("Maximum Number is :" + firstValue);
-
-            }
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(firstValue) > 0 ||
-               secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(firstValue) > 0 ||
-               secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(firstValue) >= 0)
-            {
-                Console.WriteLine("Maximum Number is :" + secondValue);
-            }
-            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(firstValue) > 0 ||
-               thirdValue.CompareTo(firstValue) >= 0 && thirdValue.CompareTo(firstValue) > 0 ||
-               thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(firstValue) >= 0)
-            {
-                Console.WriteLine("Maximum Number is :" + thirdValue);
-            }
-            return firstValue;
+            Array.Sort(Values);
+            return Values;
+        }
+        public T MaxValue(params T[] Values)
+        {
+            var sorted_Values = Sort(Values);
+            return sorted_Values[^1];
+        }
+        public T MaxMethod()
+        {
+            var max = MaxValue(this.Values);
+            return max;
+        }
+        public void PrintMaxValue()
+        {
+            var max = MaxValue(this.Values);
+            Console.WriteLine("Maximum Value is : " + max);
         }
     }
 }
