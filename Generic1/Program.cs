@@ -6,15 +6,15 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Please Enter First Value");
-            float firstValue = Convert.ToSingle(Console.ReadLine());
+            string firstValue = Console.ReadLine();
 
             Console.WriteLine("Please Enter Second Value");
-            float secondValue = Convert.ToSingle(Console.ReadLine());
+            string secondValue = Console.ReadLine();
 
             Console.WriteLine("Please Enter Third Value");
-            float thirdValue = Convert.ToSingle(Console.ReadLine());
+            string thirdValue = Console.ReadLine();
 
-            MaximumNumber.MaximumfloategerNumber(firstValue, secondValue, thirdValue);
+            MaximumNumber.MaximumstringegerNumber(firstValue, secondValue, thirdValue);
         }
     }
 }

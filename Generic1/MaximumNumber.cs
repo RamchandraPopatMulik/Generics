@@ -8,18 +8,18 @@ namespace Generic1
 {
     public class MaximumNumber
     {
-        public float firstValue;
-        public float secondValue;
-        public float thirdValue;
+        public string firstValue;
+        public string secondValue;
+        public string thirdValue;
       
-        public MaximumNumber(float firstValue, float secondValue, float thirdValue)
+        public MaximumNumber(string firstValue, string secondValue, string thirdValue)
         {
             this.firstValue = firstValue;
             this.secondValue = secondValue;
             this.thirdValue = thirdValue;
         }
 
-        public static float MaximumfloategerNumber(float firstValue, float secondValue, float thirdValue)
+        public static string MaximumstringegerNumber(string firstValue, string secondValue, string thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
