@@ -1,20 +1,16 @@
-﻿namespace Generic1
+﻿using NPOI.SS.Formula.Functions;
+
+namespace Generic1
 {
-   
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Enter First Value");
-            string firstValue = Console.ReadLine();
+            MaximumNumber<int>.MaximumstringegerNumber(10,20,30);
 
-            Console.WriteLine("Please Enter Second Value");
-            string secondValue = Console.ReadLine();
+            MaximumNumber<float>.MaximumstringegerNumber(11.2f,20.6f,30.9f);
 
-            Console.WriteLine("Please Enter Third Value");
-            string thirdValue = Console.ReadLine();
-
-            MaximumNumber.MaximumstringegerNumber(firstValue, secondValue, thirdValue);
+            MaximumNumber<string>.MaximumstringegerNumber("Ramchandra","Hari","Ram");
         }
     }
 }

@@ -6,41 +6,46 @@ using System.Threading.Tasks;
 
 namespace Generic1
 {
-    public class MaximumNumber
+    public class MaximumNumber <T> where T:IComparable
     {
-        public string firstValue;
-        public string secondValue;
-        public string thirdValue;
+        public T firstValue,secondValue,thirdValue;
       
-        public MaximumNumber(string firstValue, string secondValue, string thirdValue)
+        public MaximumNumber(T firstValue, T secondValue, T thirdValue)
         {
             this.firstValue = firstValue;
             this.secondValue = secondValue;
             this.thirdValue = thirdValue;
         }
 
-        public static string MaximumstringegerNumber(string firstValue, string secondValue, string thirdValue)
+        public static T MaximumstringegerNumber(T firstValue, T secondValue, T thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
             {
                 Console.WriteLine("Maximum Number is :" + firstValue);
-
             }
+
             if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(firstValue) > 0 ||
                secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(firstValue) > 0 ||
                secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(firstValue) >= 0)
             {
                 Console.WriteLine("Maximum Number is :" + secondValue);
             }
+
             if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(firstValue) > 0 ||
                thirdValue.CompareTo(firstValue) >= 0 && thirdValue.CompareTo(firstValue) > 0 ||
                thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(firstValue) >= 0)
             {
                 Console.WriteLine("Maximum Number is :" + thirdValue);
             }
+
             return firstValue;
+        }
+        public T MaxMethod()
+        {
+            T max = MaximumNumber<T>.MaximumstringegerNumber(this.firstValue,this.secondValue,this.thirdValue);
+            return max;
         }
     }
 }
