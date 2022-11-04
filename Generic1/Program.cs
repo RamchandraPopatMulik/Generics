@@ -6,7 +6,7 @@
         {
             foreach (int item in inputArray)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("Integer Array is"+item);
             }
 
         }
@@ -14,7 +14,7 @@
         {
             foreach (double item in inputArray)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("Double Array is :"+item);
             }
 
         }
@@ -22,7 +22,7 @@
         {
             foreach (int item in inputArray)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("Character Array is :"+item);
             }
 
         }
