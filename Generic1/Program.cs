@@ -1,20 +1,20 @@
 ﻿namespace Generic1
 {
    
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Please Enter First Value");
-            int firstValue = Convert.ToInt32(Console.ReadLine());
+            float firstValue = Convert.ToSingle(Console.ReadLine());
 
             Console.WriteLine("Please Enter Second Value");
-            int secondValue = Convert.ToInt32(Console.ReadLine());
+            float secondValue = Convert.ToSingle(Console.ReadLine());
 
             Console.WriteLine("Please Enter Third Value");
-            int thirdValue = Convert.ToInt32(Console.ReadLine());
+            float thirdValue = Convert.ToSingle(Console.ReadLine());
 
-            MaximumNumber.MaximumIntegerNumber(firstValue, secondValue, thirdValue);
+            MaximumNumber.MaximumfloategerNumber(firstValue, secondValue, thirdValue);
         }
     }
 }
