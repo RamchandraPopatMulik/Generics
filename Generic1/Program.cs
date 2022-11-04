@@ -2,27 +2,11 @@
 {
     internal class Program
     {
-        public static void toPrint(int [] inputArray)
+        public static void toPrint<T>(T[] inputArray)
         {
-            foreach (int item in inputArray)
+            foreach (T item in inputArray)
             {
-                Console.WriteLine("Integer Array is"+item);
-            }
-
-        }
-        public static void toPrint(double[] inputArray)
-        {
-            foreach (double item in inputArray)
-            {
-                Console.WriteLine("Double Array is :"+item);
-            }
-
-        }
-        public static void toPrint(char[] inputArray)
-        {
-            foreach (int item in inputArray)
-            {
-                Console.WriteLine("Character Array is :"+item);
+                Console.WriteLine(item);
             }
 
         }
@@ -31,9 +15,9 @@
             int[] intArray = { 1, 2, 3, 4, 5, 6 };
             double[] doubleArray = { 2.1, 2.2, 2.3, 2.4, 2.5, 2.6 };
             char[] charArray = { 'a', 'b', 'c', 'd', 'e' };
-            Program.toPrint(intArray);
-            Program.toPrint(doubleArray);
-            Program.toPrint(charArray);
+            Program.toPrint<int>(intArray);
+            Program.toPrint<double>(doubleArray);
+            Program.toPrint<char>(charArray);
         }
     }
 }
