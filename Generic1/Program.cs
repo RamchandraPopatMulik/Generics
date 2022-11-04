@@ -25,9 +25,12 @@
             double[] doubleArray = { 2.1, 2.2, 2.3, 2.4, 2.5, 2.6 };
             char[] charArray = { 'a', 'b', 'c', 'd', 'e' };
 
-            new PrintArray<int>(intArray).toPrint();
-            new PrintArray<double>(doubleArray).toPrint();
-            new PrintArray<char>(charArray).toPrint();
+           PrintArray<int>print= new PrintArray<int>(intArray);
+           print.toPrint();
+           PrintArray<double>print1= new PrintArray<double>(doubleArray);
+           print1.toPrint();
+           PrintArray<Char>print2=new PrintArray<char>(charArray);
+           print2.toPrint();
         }
     }
 }
