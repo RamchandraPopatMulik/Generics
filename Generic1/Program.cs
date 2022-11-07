@@ -6,11 +6,11 @@ namespace Generic1
     {
         static void Main(string[] args)
         {
-            MaximumNumber<int>.MaximumstringegerNumber(10,20,30);
+            MaximumNumber<int>.MaximumstringegerNumber(10,20,30,40);
 
-            MaximumNumber<float>.MaximumstringegerNumber(11.2f,20.6f,30.9f);
+            MaximumNumber<float>.MaximumstringegerNumber(11.2f,20.6f,30.9f,69.5f);
 
-            MaximumNumber<string>.MaximumstringegerNumber("Ramchandra","Hari","Ram");
+            MaximumNumber<string>.MaximumstringegerNumber("Ramchandra","Hari","Ram","Amit");
         }
     }
 }
