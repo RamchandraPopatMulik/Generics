@@ -28,15 +28,15 @@ namespace Generic1
                 Console.WriteLine("Maximum Number is :" + firstValue);
 
             }
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(firstValue) > 0 ||
-               secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(firstValue) > 0 ||
-               secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(firstValue) >= 0)
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0 ||
+               secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(thirdValue) > 0 ||
+               secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) >= 0)
             {
                 Console.WriteLine("Maximum Number is :" + secondValue);
             }
-            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(firstValue) > 0 ||
-               thirdValue.CompareTo(firstValue) >= 0 && thirdValue.CompareTo(firstValue) > 0 ||
-               thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(firstValue) >= 0)
+            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0 ||
+               thirdValue.CompareTo(firstValue) >= 0 && thirdValue.CompareTo(secondValue) > 0 ||
+               thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) >= 0)
             {
                 Console.WriteLine("Maximum Number is :" + thirdValue);
             }
