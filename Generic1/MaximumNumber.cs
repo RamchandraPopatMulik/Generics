@@ -24,6 +24,7 @@ namespace Generic1
                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 && firstValue.CompareTo(fourthValue) > 0 ||
                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0 && firstValue.CompareTo(fourthValue) > 0  )
             {
+               
                 Console.WriteLine("Maximum Number is :" + firstValue);
             }
 
@@ -31,6 +32,7 @@ namespace Generic1
                secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(fourthValue) > 0 ||
                secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) >= 0 && secondValue.CompareTo(fourthValue) > 0)
             {
+               
                 Console.WriteLine("Maximum Number is :" + secondValue);
             }
 
@@ -38,6 +40,7 @@ namespace Generic1
                thirdValue.CompareTo(firstValue) >= 0 && thirdValue.CompareTo(secondValue) > 0 && thirdValue.CompareTo(fourthValue) > 0 ||
                thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) >= 0 && thirdValue.CompareTo(fourthValue) > 0)
             {
+                
                 Console.WriteLine("Maximum Number is :" + thirdValue);
             }
 
@@ -45,6 +48,7 @@ namespace Generic1
                fourthValue.CompareTo(firstValue) >= 0 && fourthValue.CompareTo(secondValue) > 0 && fourthValue.CompareTo(thirdValue) > 0 ||
                fourthValue.CompareTo(firstValue) > 0 && fourthValue.CompareTo(secondValue) >= 0 && fourthValue.CompareTo(thirdValue) > 0)
             {
+               
                 Console.WriteLine("Maximum Number is :" + fourthValue);
             }
 
